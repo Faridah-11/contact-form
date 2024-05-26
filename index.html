@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="hidden success">
+    <div class="title"><img src="assets/images/icon-success-check.svg" alt="check"> Message Sent!</div>
+     <div class="thanks">Thanks for completing the form. We'll be in touch soon!</div>
+   </div>
+<form action="">
+  <h1 class="form-title">Contact Us</h1> 
+  <div class="name_details">
+    <section class="name_field fName">
+      <label for="fname">First Name <span>*</span></label><br>
+      <input type="text" id="fname" name="fname" value=""><br>
+      <p class="pop_up fname_pop_up hidden">
+        This field is required
+
+      </p>
+    </section>
+    <section class="name_field lName">
+      <label for="lname">Last Name <span>*</span></label> <br>
+      <input type="text" id="lname" name="lname">
+      <p class="pop_up lname_pop_up hidden">
+        This field is required
+      </p>   
+    </section></div>
+
+  <section class="email">
+    <label for="email">Email Address <span>*</span></label>
+    <input type="email" id="email" name="email">
+    <p class="pop_up email_pop_up hidden">
+      Please enter a valid email address
+    </p>
+  </section>
+
+  <section class="query">
+    <label for="query-type">Query Type <span>*</span></label>
+    <section class="query_type">
+
+      <div class="type">
+        <input type="radio" id="general query-type" class="query-type" name="query" value="general"> General Support
+      </div>
+      <div class="type">
+        <input type="radio" id="support query-type" class="query-type" name="query" value="support"> Support Request
+      </div>
+
+    </div>
+  </section>
+  <p class="pop_up query_pop_up hidden">
+    Please select a query type
+  </p>
+  </section>
+
+  <section class="message">
+   <label for="message">Message <span>*</span></label>
+   <textarea name="message" id="message" cols="3" rows="3"></textarea>
+   <!-- <input  type="text" id="message" name="message" value=""> -->
+    <p class="pop_up message_pop_up hidden">
+      This field is required
+    </p>
+  </section>
+
+  <section class="check">
+    <input type="checkbox" name="consent" id="consent" value="">
+    <label for="consent">I consent to being contacted by the team <span>*</span></label>
+    <p class="pop_up consent_pop_up hidden">
+      To submit this form, please consent to being contacted
+    </p>
+  </section>
+
+  <section class="submitBtn">
+    <button type="submit">Submit</button>
+  </section>
+</form>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Faridah-11</a>.
+  </div>
+</body>
+</html>
